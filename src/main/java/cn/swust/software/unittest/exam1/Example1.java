@@ -14,6 +14,5 @@ public class Example1 {
 			addition.add(cut.fraction(list[i]));
 		}
 		return addition.getSum();
-	}
-
+	} 
 }
