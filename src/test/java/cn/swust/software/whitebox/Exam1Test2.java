@@ -1,6 +1,6 @@
 package cn.swust.software.whitebox;
 
-import static org.junit.jupiter.api.Assertions.*;
+ 
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
@@ -11,7 +11,7 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 import org.junit.jupiter.params.provider.CsvSource;
 
-import junit.framework.Assert;
+ 
 
 @DisplayName("Junit5测试")
 class Exam1Test2 {
