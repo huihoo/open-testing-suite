@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module PUBLIC "-//Puppy Crawl//DTD Check Configuration 1.3//EN" "http://www.puppycrawl.com/dtds/configuration_1_3.dtd">
+ 
+<!--
+    This configuration file was written by the eclipse-cs plugin configuration editor
+-->
+<!--
+    Checkstyle-Configuration: mavens_checks
+    Description: none
+-->
+<module name="Checker">
+  <property name="severity" value="warning"/>
+  <module name="TreeWalker">
+    <module name="JavadocMethod">
+      <metadata name="net.sf.eclipsecs.core.comment" value="检查方法和构造函数的javadoc"/>
+      <message key="javadoc.duplicateTag" value="重复的{ 0 }标记。"/>
+      <message key="javadoc.classInfo" value="无法获得类信息为{ 0 }标记“{ 1 }”。"/>
+      <message key="javadoc.missing" value="缺少注释"/>
+      <message key="javadoc.expectedTag" value="Expected {0} tag for ''{1}''.在注释中希望有{0}的说明。"/>
+      <message key="javadoc.unusedTagGeneral" value="Unused Javadoc tag.未使用javadoc标签"/>
+      <message key="javadoc.invalidInheritDoc" value="Invalid use of the '{'@inheritDoc'}' tag.无效用的{@inheritDoc}标签"/>
+      <message key="javadoc.return.expected" value="Expected an @return tag.预计一个返回标签"/>
+    </module>
+    <module name="JavadocType">
+      <metadata name="net.sf.eclipsecs.core.comment" value="检查类和接口的javadoc。默认不检查author 和version tags。"/>
+      <message key="javadoc.missing" value="方法前面缺少javadoc注释"/>
+      <message key="javadoc.unusedTagGeneral" value="Unused Javadoc tag.未使用的Javadoc标签。"/>
+      <message key="javadoc.unusedTag" value="Unused {0} tag for ''{1}''.无法获得类信息为{ 0 }标记“{ 1 }”。"/>
+    </module>
+    <module name="JavadocVariable">
+      <metadata name="net.sf.eclipsecs.core.comment" value="检查变量的javadoc。"/>
+      <message key="javadoc.missing" value="方法前面缺少javadoc注释"/>
+    </module>
+    <module name="JavadocStyle">
+      <metadata name="net.sf.eclipsecs.core.comment" value="检查javadoc的格式"/>
+      <message key="javadoc.missing" value="方法前面缺少javadoc注释"/>
+      <message key="javadoc.empty" value="Javadoc has empty description section.javadoc有空描述段"/>
+    </module>
+    <module name="ConstantName">
+      <metadata name="net.sf.eclipsecs.core.comment" value="检查常量名。"/>
+      <message key="name.invalidPattern" value="''{0}''必须匹配格式 ''{1}''."/>
+    </module>
+    <module name="LocalFinalVariableName">
+      <metadata name="net.sf.eclipsecs.core.comment" value="检查局部的final类型变量名，包括catch的参数。"/>
+      <property name="severity" value="ignore"/>
+      <message key="name.invalidPattern" value="''{0}''必须匹配格式 ''{1}''."/>
+      <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
+    </module>
+    <module name="LocalVariableName">
+      <metadata name="net.sf.eclipsecs.core.comment" value="检查局部的非final类型的变量名，包括catch的参数。"/>
+      <property name="severity" value="ignore"/>
+      <message key="name.invalidPattern" value="''{0}''必须匹配格式 ''{1}''."/>
+      <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
+    </module>
+    <module name="MemberName">
+      <metadata name="net.sf.eclipsecs.core.comment" value="检查非静态变量。"/>
+      <property name="format" value="^[a-z][a-zA-Z0-9_]*$"/>
+      <message key="name.invalidPattern" value="''{0}''必须匹配格式 ''{1}''."/>
+    </module>
+    <module name="MethodName">
+      <metadata name="net.sf.eclipsecs.core.comment" value="检查方法名。"/>
+      <property name="format" value="^[a-z][a-zA-Z0-9_]*$"/>
+      <message key="name.invalidPattern" value="''{0}''必须匹配格式 ''{1}''."/>
+      <message key="method.name.equals.class.name" value="方法名称“{ 0 }”绝不等于封闭类名。"/>
+    </module>
+    <module name="PackageName">
+      <metadata name="net.sf.eclipsecs.core.comment" value="检查包名"/>
+      <property name="severity" value="ignore"/>
+      <message key="name.invalidPattern" value="''{0}''必须匹配格式 ''{1}''."/>
+      <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
+    </module>
+    <module name="ParameterName">
+      <metadata name="net.sf.eclipsecs.core.comment" value="检查参数名"/>
+      <message key="name.invalidPattern" value="''{0}''必须匹配格式 ''{1}''."/>
+    </module>
+    <module name="StaticVariableName">
+      <metadata name="net.sf.eclipsecs.core.comment" value="检查静态的，非final类型的变量名。"/>
+      <property name="severity" value="ignore"/>
+      <message key="name.invalidPattern" value="''{0}''必须匹配格式 ''{1}''."/>
+      <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
+    </module>
+    <module name="TypeName">
+      <metadata name="net.sf.eclipsecs.core.comment" value="检查类名和接口名"/>
+      <message key="name.invalidPattern" value="''{0}''必须匹配格式 ''{1}''."/>
+    </module>
+    <module name="AvoidStarImport">
+      <metadata name="net.sf.eclipsecs.core.comment" value="检查是否有使用*进行import"/>
+      <property name="severity" value="ignore"/>
+      <message key="import.avoidStar" value="Using the ''.*'' form of import should be avoided - {0}.使用''.*''形式的进口应该避免 - {0}"/>
+      <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
+    </module>
+    <module name="IllegalImport">
+      <metadata name="net.sf.eclipsecs.core.comment" value="检查是否import了违法的包。默认拒绝import所有sun.*包。"/>
+      <message key="import.illegal" value="从非法包中 Import内容 - {0}."/>
+    </module>
+    <module name="RedundantImport">
+      <metadata name="net.sf.eclipsecs.core.comment" value="检查是否有重复的import"/>
+    </module>
+    <module name="UnusedImports">
+      <metadata name="net.sf.eclipsecs.core.comment" value="检查是否有未使用的import"/>
+      <message key="import.unused" value="没有使用import - {0}."/>
+    </module>
+    <module name="LineLength">
+      <metadata name="net.sf.eclipsecs.core.comment" value="检查代码行的长度"/>
+      <property name="max" value="500"/>
+      <message key="maxLineLen" value="代码行长度超过 {0,number,integer} 字符 (found {1,number,integer})."/>
+    </module>
+    <module name="MethodLength">
+      <metadata name="net.sf.eclipsecs.core.comment" value="检查方法和构造函数的长度。默认为150。"/>
+      <message key="maxLen.method" value="方法长度是 {0,number,integer} 字符 (max allowed is {1,number,integer})."/>
+    </module>
+    <module name="ParameterNumber">
+      <metadata name="net.sf.eclipsecs.core.comment" value="检查方法和构造函数的参数个数。默认为7。"/>
+      <message key="maxParam" value="超过 {0,number,integer} 参数 (found {1,number,integer})."/>
+    </module>
+    <module name="EmptyForIteratorPad">
+      <metadata name="net.sf.eclipsecs.core.comment" value="检查空的迭代位置的空白。"/>
+      <property name="severity" value="ignore"/>
+      <message key="ws.followed" value="''{0}'' 后面不能有空格"/>
+      <message key="ws.notFollowed" value="''{0}'' 后面缺少空格"/>
+      <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
+    </module>
+    <module name="GenericWhitespace">
+      <metadata name="net.sf.eclipsecs.core.comment" value="检查&lt;和&gt;周围的空白。"/>
+      <message key="ws.followed" value="''{0}'' 后面不能有空格"/>
+      <message key="ws.illegalFollow" value="''{0}''后面不能跟非法字符."/>
+      <message key="ws.preceded" value="''{0}'' 前面不能有空格."/>
+      <message key="ws.notPreceded" value="''{0}'' 前面缺少空格."/>
+    </module>
+    <module name="MethodParamPad">
+      <metadata name="net.sf.eclipsecs.core.comment" value="检查方法签名之前的空白。"/>
+      <property name="severity" value="ignore"/>
+      <message key="ws.preceded" value="''{0}'' 前面不能有空格."/>
+      <message key="ws.notPreceded" value="''{0}''前面缺少空格."/>
+      <message key="line.previous" value="''{0}'' 应该位于前一行."/>
+      <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
+    </module>
+    <module name="NoWhitespaceAfter">
+      <metadata name="net.sf.eclipsecs.core.comment" value="检查分隔符后的空白。"/>
+      <property name="severity" value="ignore"/>
+      <message key="ws.followed" value="''{0}'' 后面不能有空格."/>
+      <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
+    </module>
+    <module name="NoWhitespaceBefore">
+      <metadata name="net.sf.eclipsecs.core.comment" value="检查分隔符前的空白。"/>
+      <property name="severity" value="ignore"/>
+      <message key="ws.preceded" value="''{0}''前面不能有空格"/>
+      <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
+    </module>
+    <module name="OperatorWrap">
+      <metadata name="net.sf.eclipsecs.core.comment" value="检查操作符的空白规则。"/>
+      <message key="line.new" value="''{0}'' 应该位于新的一行."/>
+      <message key="line.previous" value="''{0}'' 应该位于前一行."/>
+    </module>
+    <module name="ParenPad">
+      <metadata name="net.sf.eclipsecs.core.comment" value="检查圆括号的空白规则。"/>
+      <property name="severity" value="ignore"/>
+      <message key="ws.followed" value="''{0}''后面不能有空格."/>
+      <message key="ws.preceded" value="''{0}''前面不能有空格."/>
+      <message key="ws.notPreceded" value="''{0}'' 前面缺少空格."/>
+      <message key="ws.notFollowed" value="''{0}'' 后面缺少空格."/>
+      <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
+    </module>
+    <module name="TypecastParenPad">
+      <metadata name="net.sf.eclipsecs.core.comment" value="检查强制转型的圆括号的空白规则"/>
+      <property name="severity" value="ignore"/>
+      <property name="tokens" value="RPAREN,TYPECAST"/>
+      <message key="ws.followed" value="''{0}'' 后面不能有空格"/>
+      <message key="ws.preceded" value="''{0}'' 前面不能有空格."/>
+      <message key="ws.notPreceded" value="''{0}'' 前面缺少空格."/>
+      <message key="ws.notFollowed" value="''{0}'' 后面缺少空格."/>
+      <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
+    </module>
+    <module name="WhitespaceAfter">
+      <metadata name="net.sf.eclipsecs.core.comment" value="检查分隔符是否在空白之后"/>
+      <message key="ws.notFollowed" value="''{0}'' 后面缺少空格"/>
+    </module>
+    <module name="WhitespaceAround">
+      <metadata name="net.sf.eclipsecs.core.comment" value="检查分隔符周围是否有空白。"/>
+      <property name="severity" value="ignore"/>
+      <property name="tokens" value="ASSIGN,BAND,BAND_ASSIGN,BOR,BOR_ASSIGN,BSR,BSR_ASSIGN,BXOR,BXOR_ASSIGN,COLON,DIV,DIV_ASSIGN,DO_WHILE,EQUAL,GE,GT,LAND,LCURLY,LE,LITERAL_ASSERT,LITERAL_CATCH,LITERAL_DO,LITERAL_ELSE,LITERAL_FINALLY,LITERAL_FOR,LITERAL_IF,LITERAL_RETURN,LITERAL_SYNCHRONIZED,LITERAL_TRY,LITERAL_WHILE,LOR,LT,MINUS,MINUS_ASSIGN,MOD,MOD_ASSIGN,NOT_EQUAL,PLUS,PLUS_ASSIGN,QUESTION,RCURLY,SL,SLIST,SL_ASSIGN,SR,SR_ASSIGN,STAR,STAR_ASSIGN,TYPE_EXTENSION_AND,WILDCARD_TYPE"/>
+      <message key="ws.notPreceded" value="''{0}''前面缺少空格."/>
+      <message key="ws.notFollowed" value="''{0}'' 后面缺少空格."/>
+      <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
+    </module>
+    <module name="ModifierOrder">
+      <metadata name="net.sf.eclipsecs.core.comment" value="检查修饰符的顺序是否遵照java语言规范。"/>
+      <message key="mod.order" value="''{0}'' 修饰符没有按照JLS的建议来排序."/>
+      <message key="annotation.order" value="''{0}'' 修饰的注释符不能位于没有注释的修饰符之前 does not precede non-annotation modifiers."/>
+    </module>
+    <module name="RedundantModifier">
+      <metadata name="net.sf.eclipsecs.core.comment" value="检查接口和annotation中是否有重复的修饰符。"/>
+      <property name="severity" value="ignore"/>
+      <message key="redundantModifier" value="多余的 ''{0}'' 修饰符."/>
+      <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
+    </module>
+    <module name="AvoidNestedBlocks"/>
+    <module name="EmptyBlock">
+      <metadata name="net.sf.eclipsecs.core.comment" value="检查空的代码块。"/>
+      <message key="block.empty" value="空的 {0} 代码块."/>
+      <message key="block.noStmt" value="必须至少有一个声明。"/>
+    </module>
+    <module name="LeftCurly">
+      <metadata name="net.sf.eclipsecs.core.comment" value="检查’{’和左边的代码块是否在同一行。"/>
+      <property name="severity" value="ignore"/>
+      <message key="line.new" value="''{0}'' 在行列中 {1}应该位于新的一行"/>
+      <message key="line.previous" value="''{0}'' 在行列中 {1} 应该位于之前的一行."/>
+      <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
+    </module>
+    <module name="NeedBraces">
+      <metadata name="net.sf.eclipsecs.core.comment" value="检查是否需要大括号。主要是在if，else时的情况。"/>
+      <message key="needBraces" value="''{0}''缺少 '''{}'''s."/>
+    </module>
+    <module name="RightCurly">
+      <metadata name="net.sf.eclipsecs.core.comment" value="检查’}’和右边的代码块是否在同一行"/>
+      <property name="severity" value="ignore"/>
+      <message key="line.alone" value="''{0}'' 在行列中 {1} 应该单独位于一行"/>
+      <message key="line.new" value="''{0}'' 在行列中 {1} 应该位于新的一行."/>
+      <message key="line.same" value="''{0}'' 在行列中 {1} should be on the same line as the next part of a multi-block statement."/>
+      <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
+    </module>
+    <module name="AvoidInlineConditionals">
+      <metadata name="net.sf.eclipsecs.core.comment" value="检查inline的条件操作。"/>
+    </module>
+    <module name="EmptyStatement">
+      <metadata name="net.sf.eclipsecs.core.comment" value="检查空的代码段。"/>
+      <message key="empty.statement" value="空的代码段"/>
+    </module>
+    <module name="EqualsHashCode">
+      <metadata name="net.sf.eclipsecs.core.comment" value="检查一个可能为null的字符串是否在equals()比较的左边。"/>
+    </module>
+    <module name="HiddenField">
+      <metadata name="net.sf.eclipsecs.core.comment" value="检查局部变量或参数是否隐藏了类中的变量。"/>
+      <message key="hidden.field" value="''{0}'' 隐藏了字段."/>
+    </module>
+    <module name="IllegalInstantiation">
+      <metadata name="net.sf.eclipsecs.core.comment" value="检查是否使用工厂方法实例化"/>
+      <message key="instantiation.avoid" value="实例化的 {0} 应该避免"/>
+    </module>
+    <module name="InnerAssignment">
+      <property name="severity" value="ignore"/>
+      <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
+    </module>
+    <module name="MagicNumber">
+      <property name="severity" value="ignore"/>
+      <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
+    </module>
+    <module name="MissingSwitchDefault">
+      <metadata name="net.sf.eclipsecs.core.comment" value="检查switch语句是否有default的clause。"/>
+      <message key="missing.switch.default" value="switch 语句缺少 &quot;default&quot; clause."/>
+    </module>
+    <module name="SimplifyBooleanExpression">
+      <metadata name="net.sf.eclipsecs.core.comment" value="检查是否有过度复杂的布尔表达式"/>
+      <property name="severity" value="ignore"/>
+      <message key="simplify.expression" value="该表达式应该简化"/>
+      <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
+    </module>
+    <module name="SimplifyBooleanReturn">
+      <metadata name="net.sf.eclipsecs.core.comment" value="检查是否有过于复杂的布尔返回代码段"/>
+      <property name="severity" value="ignore"/>
+      <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
+    </module>
+    <module name="DesignForExtension">
+      <metadata name="net.sf.eclipsecs.core.comment" value="检查类是否为扩展设计。"/>
+      <property name="severity" value="ignore"/>
+      <message key="design.forExtension" value="方法 ''{0}'' 不是扩展设计 - 需要被抽象, 最终为空."/>
+      <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
+    </module>
+    <module name="FinalClass">
+      <property name="severity" value="ignore"/>
+      <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
+    </module>
+    <module name="HideUtilityClassConstructor">
+      <metadata name="net.sf.eclipsecs.core.comment" value="检查工具类是否有public的构造器。"/>
+      <property name="severity" value="ignore"/>
+      <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
+    </module>
+    <module name="InterfaceIsType">
+      <metadata name="net.sf.eclipsecs.core.comment" value="检查接口是否仅定义类型。"/>
+      <property name="severity" value="ignore"/>
+      <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
+    </module>
+    <module name="VisibilityModifier">
+      <metadata name="net.sf.eclipsecs.core.comment" value="检查类成员的可见度。"/>
+      <property name="severity" value="ignore"/>
+      <message key="variable.notPrivate" value="变量 ''{0}'' 必须是私有访问器方法"/>
+      <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
+    </module>
+    <module name="ArrayTypeStyle">
+      <metadata name="net.sf.eclipsecs.core.comment" value="检查数组类型定义的样式"/>
+      <message key="array.type.style" value="数组括号在非法的位置。"/>
+    </module>
+    <module name="FinalParameters">
+      <property name="severity" value="ignore"/>
+      <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
+    </module>
+    <module name="TodoComment">
+      <property name="severity" value="ignore"/>
+      <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
+    </module>
+    <module name="UpperEll">
+      <metadata name="net.sf.eclipsecs.core.comment" value="检查long型约束是否有大写的“L”。"/>
+      <message key="upperEll" value="应该用大写字母 ''L''."/>
+    </module>
+    <module name="EmptyStatement"/>
+    <module name="EqualsAvoidNull"/>
+    <module name="FinalLocalVariable">
+      <property name="severity" value="ignore"/>
+      <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
+    </module>
+    <module name="HiddenField">
+      <property name="severity" value="ignore"/>
+      <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
+    </module>
+    <module name="IllegalInstantiation"/>
+    <module name="IllegalCatch">
+      <property name="illegalClassNames" value="java.lang.Throwable, java.lang.RuntimeException"/>
+    </module>
+    <module name="IllegalThrows"/>
+    <module name="IllegalToken">
+      <property name="tokens" value="POST_INC,POST_DEC"/>
+    </module>
+    <module name="IllegalTokenText"/>
+    <module name="MultipleVariableDeclarations"/>
+    <module name="NestedTryDepth"/>
+    <module name="NoClone"/>
+    <module name="NoFinalizer"/>
+    <module name="PackageDeclaration"/>
+    <module name="ParameterAssignment"/>
+    <module name="RequireThis"/>
+    <module name="ReturnCount">
+      <property name="max" value="10"/>
+    </module>
+    <module name="SimplifyBooleanExpression"/>
+    <module name="SimplifyBooleanReturn"/>
+    <module name="StringLiteralEquality"/>
+    <module name="SuperClone"/>
+    <module name="SuperFinalize"/>
+    <module name="ArrayTrailingComma"/>
+    <module name="UnnecessaryParentheses"/>
+    <module name="OneStatementPerLine"/>
+ 
+  </module>
+  <module name="JavadocPackage">
+    <metadata name="net.sf.eclipsecs.core.comment" value="检查每个java package中是否有java注释文件"/>
+    <message key="javadoc.packageInfo" value="包下缺少package-info文件"/>
+  </module>
+  <module name="NewlineAtEndOfFile">
+    <property name="severity" value="ignore"/>
+    <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
+  </module>
+  <module name="Translation">
+    <metadata name="net.sf.eclipsecs.core.comment" value="检查property文件中是否有相同的key"/>
+    <property name="severity" value="ignore"/>
+    <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
+  </module>
+  <module name="FileLength">
+    <metadata name="net.sf.eclipsecs.core.comment" value="检查java文件的长度。默认为2000"/>
+    <message key="maxLen.file" value="文件长度是{0,number,integer} 字符 (max allowed is {1,number,integer})."/>
+  </module>
+  <module name="FileTabCharacter">
+    <metadata name="net.sf.eclipsecs.core.comment" value="检查是否有Tab字符（’&quot;t’）。"/>
+    <property name="severity" value="ignore"/>
+    <message key="containsTab" value="行含有”tab” 字符"/>
+    <message key="file.containsTab" value="文件包含有”tab” 字符 (this is the first instance)."/>
+    <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
+  </module>
+  <module name="RegexpSingleline">
+    <property name="format" value="\s+$"/>
+    <property name="message" value="Line has trailing spaces."/>
+  </module>
+</module>
