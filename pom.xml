@@ -93,18 +93,6 @@
 				<enabled>true</enabled>
 			</releases>
 		</repository> 
-		<repository>
-			<id>nexus-163</id>
-			<name>Nexus 163</name>
-			<url>http://mirrors.163.com/maven/repository/maven-public/</url>
-
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-		</repository> 
 	</repositories>
 	<pluginRepositories>
 		<pluginRepository>
@@ -112,18 +100,6 @@
 			<url>http://maven.aliyun.com/nexus/content/groups/public/</url>
 			<snapshots>
 				<enabled>true</enabled>
-			</snapshots>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-		</pluginRepository>
-
-		<pluginRepository>
-			<id>nexus-163</id>
-			<name>Nexus 163</name>
-			<url>http://mirrors.163.com/maven/repository/maven-public/</url>
-			<snapshots>
-				<enabled>false</enabled>
 			</snapshots>
 			<releases>
 				<enabled>true</enabled>
@@ -199,7 +175,7 @@
 				<artifactId>maven-checkstyle-plugin</artifactId>
 				<version>${maven.checkstyle.version}</version>
 				<configuration>
-					<configLocation>checkstyle.xml</configLocation>
+					<configLocation>maven_checks.xml</configLocation>
 					<sourceDirectories></sourceDirectories>
 					<testSourceDirectories>${project.build.testSourceDirectory}</testSourceDirectories>
 					<includeTestSourceDirectory>true</includeTestSourceDirectory>
