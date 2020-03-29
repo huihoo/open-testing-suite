@@ -1,10 +1,17 @@
 package cn.swust.software.unittest.demo;
 
-import static org.junit.Assert.*;
-
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.Arguments;
+import org.junit.jupiter.params.provider.CsvFileSource;
+import org.junit.jupiter.params.provider.CsvSource;
+import org.junit.jupiter.params.provider.EnumSource;
+import org.junit.jupiter.params.provider.MethodSource;
+import org.junit.jupiter.params.provider.ValueSource;
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 
@@ -15,7 +22,7 @@ import static org.mockito.Mockito.verify;
 public class AddThreeFunTest {
 	private double DELTA = 1e-15;
 
-	@Before
+	@BeforeEach
 	public void setUp() throws Exception {
 		 
 	}
@@ -32,7 +39,7 @@ public class AddThreeFunTest {
 		int exp = 140;
 		Mockito.when(mockTwo.add(50, 60)).thenReturn(110);
 		int act = testObj.add(a, b, c);
-		Assert.assertEquals(exp, act);
+		Assertions.assertEquals(exp, act);
 		//Assert.assertEquals(0.11, 0.05, DELTA);
 		Mockito.verify(mockTwo).add(50, 60);
 	}
@@ -45,7 +52,7 @@ public class AddThreeFunTest {
 		int c = 30;
 		int exp = 140;
 		int act = testObj.add(a, b, c);
-		Assert.assertEquals(exp, act);
+		Assertions.assertEquals(exp, act);
 	}
 
 }
