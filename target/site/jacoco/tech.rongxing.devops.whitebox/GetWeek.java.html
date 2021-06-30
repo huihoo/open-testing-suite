@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>GetWeek.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">whitebox</a> &gt; <a href="index.source.html" class="el_package">tech.rongxing.devops.whitebox</a> &gt; <span class="el_source">GetWeek.java</span></div><h1>GetWeek.java</h1><pre class="source lang-java linenums">package tech.rongxing.devops.whitebox;
+
+<span class="nc" id="L3">public class GetWeek {</span>
+	public  String getWeek(int year,int month,int day) {
+		//十二个月每月天数
+<span class="nc" id="L6">		int a[]={31,28,31,30,31,30,31,31,30,31,30,31};</span>
+		int i;
+<span class="nc" id="L8">		int sum=0;</span>
+<span class="nc bnc" id="L9" title="All 2 branches missed.">		for(i=1;i&lt;year;i++)</span>
+		{
+			//判断是否是润年
+<span class="nc bnc" id="L12" title="All 6 branches missed.">			if((i%4==0&amp;&amp;i%100!=0)||(i%400==0))</span>
+			{
+<span class="nc" id="L14">				sum++;</span>
+			}
+		}
+			//计算年份天数
+<span class="nc" id="L18">		    sum=sum+365*(year-1);</span>
+		    //计算是这年的第几天
+<span class="nc bnc" id="L20" title="All 6 branches missed.">			if((year%4==0&amp;&amp;year%400!=0)||(year%100==0))</span>
+			{
+<span class="nc" id="L22">			  a[1]=29;</span>
+			}
+<span class="nc bnc" id="L24" title="All 2 branches missed.">			for(i=0;i&lt;month-1;i++)</span>
+			{
+<span class="nc" id="L26">				sum=sum+a[i];</span>
+			}
+<span class="nc" id="L28">			sum=sum+day;</span>
+<span class="nc bnc" id="L29" title="All 8 branches missed.">		  switch(sum % 7)</span>
+<span class="nc" id="L30">	      {   case 0 :return &quot;Sunday&quot;;</span>
+<span class="nc" id="L31">	          case 1 :return &quot;Monday&quot;;</span>
+<span class="nc" id="L32">	          case 2 :return &quot;Tuesday&quot;;</span>
+<span class="nc" id="L33">	          case 3 :return &quot;Wednesday&quot;;</span>
+<span class="nc" id="L34">	          case 4 :return &quot;Thursday&quot;;</span>
+<span class="nc" id="L35">	          case 5 :return &quot;Friday&quot;;</span>
+<span class="nc" id="L36">	          case 6 :return &quot;Saturday&quot;; </span>
+	      }
+<span class="nc" id="L38">		return &quot;错误&quot;;</span>
+	}
+} 
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.3.201901230119</span></div></body></html>
