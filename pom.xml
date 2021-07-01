@@ -84,7 +84,7 @@
 		<repository>
 			<id>ali-plugin</id>
 			<name>ali-plugin</name>
-			<url>http://maven.aliyun.com/nexus/content/groups/public</url>
+			<url>http://192.168.10.171:8081/nexus/content/groups/public</url>
 			<layout>default</layout>
 			<snapshots>
 				<enabled>false</enabled>
@@ -97,7 +97,7 @@
 	<pluginRepositories>
 		<pluginRepository>
 			<id>ali-plugin</id>
-			<url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+			<url>http://192.168.10.171:8081/nexus/content/groups/public</url>
 			<snapshots>
 				<enabled>true</enabled>
 			</snapshots>
