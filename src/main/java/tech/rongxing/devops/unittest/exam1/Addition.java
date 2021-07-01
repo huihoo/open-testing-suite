@@ -1,7 +1,7 @@
 package tech.rongxing.devops.unittest.exam1;
 
 public class Addition {
-	 double currentSum = 0;
+	double currentSum = 0;
 
 	public double add(double figure) {
 		currentSum += figure;

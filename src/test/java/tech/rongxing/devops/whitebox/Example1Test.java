@@ -1,7 +1,5 @@
 package tech.rongxing.devops.whitebox;
 
-
-
 import java.util.EnumSet;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Stream; 

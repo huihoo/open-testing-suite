@@ -18,6 +18,7 @@ public class SecondStubbing02 {
         // stubbinging
         when(mockedList.get(0)).thenReturn("first");
         when(mockedList.get(1)).thenThrow(new RuntimeException());
+        when(mockedList.get(998)).thenReturn("999");
 
         // following prints "first"
         System.out.println(mockedList.get(0));

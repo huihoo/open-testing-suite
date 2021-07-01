@@ -25,9 +25,9 @@ under the License.
     <language>en-us</language>
     <copyright>&#169;2021</copyright>
     <item>
-      <title>File: 7,
+      <title>File: 8,
              Errors: 0,
-             Warnings: 73,
+             Warnings: 79,
              Infos: 0
       </title>
             <link>http://maven.apache.org/checkstyle.html</link>
@@ -53,6 +53,20 @@ under the License.
                 </td>
                 <td>
                   3
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#tech.rongxing.devops.mockito.VerifyExactNumberOfInvocations03.java">tech/rongxing/devops/mockito/VerifyExactNumberOfInvocations03.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  6
                 </td>
                 <td>
                   0
