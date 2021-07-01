@@ -25,9 +25,9 @@ under the License.
     <language>en-us</language>
     <copyright>&#169;2021</copyright>
     <item>
-      <title>File: 5,
+      <title>File: 7,
              Errors: 0,
-             Warnings: 68,
+             Warnings: 73,
              Infos: 0
       </title>
             <link>http://maven.apache.org/checkstyle.html</link>
@@ -44,6 +44,20 @@ under the License.
             </tr>
           </thead>
           <tbody>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#tech.rongxing.devops.mockito.FirstMock01.java">tech/rongxing/devops/mockito/FirstMock01.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
                           <tr>
                 <td>
                   <a href="http://maven.apache.org/checkstyle.html#tech.rongxing.devops.unittest.demo.AddFunTest.java">tech/rongxing/devops/unittest/demo/AddFunTest.java</a>
@@ -67,6 +81,20 @@ under the License.
                 </td>
                 <td>
                   10
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#tech.rongxing.devops.mockito.SecondStubbing02.java">tech/rongxing/devops/mockito/SecondStubbing02.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
                 </td>
                 <td>
                   0

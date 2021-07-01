@@ -16,7 +16,7 @@ public class FirstMock01 {
         // using mock object
         mockedList.add("one");
         mockedList.add("two");
-        mockedList.add("three");
+        mockedList.add("Three");
         mockedList.clear();
 
         // verification
