@@ -32,15 +32,13 @@ public class Example1Test {
 		int actual = testObj.Func1(2,0, 3);
 		Assertions.assertEquals(2, actual); 
 	}
-	
-	
+
 	@DisplayName("浮点数判定")
 	@Test
 	void testFunc3() {
 		double actual = testObj.Func3(2, 0, 3);
 		Assertions.assertEquals(2.50, actual, 0.0001);  //1e-15;
 	}
-	
 	
 	@ParameterizedTest
 	@DisplayName("ValueSource测试") 
@@ -56,8 +54,7 @@ public class Example1Test {
 	void testWithEnumSourceInclude(TimeUnit timeUnit) {
 	    assertTrue(EnumSet.of(TimeUnit.DAYS, TimeUnit.HOURS).contains(timeUnit));
 	} 
-	
-	
+
 	@DisplayName("函数构造参数测试")
 	@ParameterizedTest
 	@MethodSource("func2Data")
@@ -87,8 +84,7 @@ public class Example1Test {
 		boolean actual = testObj.Func2(name);
 		Assertions.assertEquals(exp, actual,msg) ;
 	}
-	  
-	
+
 	@DisplayName("csvSourceFile测试")
 	@ParameterizedTest
 	@CsvFileSource(resources = "/testData1.csv", numLinesToSkip = 1)

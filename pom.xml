@@ -84,7 +84,7 @@
 		<repository>
 			<id>ali-plugin</id>
 			<name>ali-plugin</name>
-			<url>http://192.168.10.171:8081/repository/maven-public/</url>
+			<url>https://oss.sonatype.org/content/repositories/snapshots/</url>
 			<layout>default</layout>
 			<snapshots>
 				<enabled>false</enabled>
@@ -97,7 +97,7 @@
 	<pluginRepositories>
 		<pluginRepository>
 			<id>ali-plugin</id>
-			<url>http://192.168.10.171:8081/repository/maven-public/</url>
+			<url>https://oss.sonatype.org/content/repositories/snapshots/</url>
 			<snapshots>
 				<enabled>true</enabled>
 			</snapshots>

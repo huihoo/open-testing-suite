@@ -1,9 +1,10 @@
 tech\rongxing\devops\mockito\VerifyExactNumberOfInvocations03.class
-tech\rongxing\devops\unittest\demo\AddFunTest.class
-tech\rongxing\devops\whitebox\GetWeekTest.class
-tech\rongxing\devops\unittest\demo\AddThreeFunTest01.class
-tech\rongxing\devops\mockito\SecondStubbing02.class
 tech\rongxing\devops\unittest\demo\AddFunTest$1.class
 tech\rongxing\devops\mockito\FirstMock01.class
 tech\rongxing\devops\whitebox\Example1Test.class
 tech\rongxing\devops\unittest\demo\AddThreeFunTest.class
+tech\rongxing\devops\unittest\demo\CalculatorTests.class
+tech\rongxing\devops\unittest\demo\AddFunTest.class
+tech\rongxing\devops\whitebox\GetWeekTest.class
+tech\rongxing\devops\unittest\demo\AddThreeFunTest01.class
+tech\rongxing\devops\mockito\SecondStubbing02.class

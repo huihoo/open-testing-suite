@@ -37,4 +37,9 @@ public class GetWeek {
 	      }
 		return "错误";
 	}
-} 
+	public static void main(String[] args) {
+		GetWeek exp1 = new GetWeek();
+		String x = exp1.getWeek(2021, 6, 30);
+		System.out.print(x);
+	}
+}

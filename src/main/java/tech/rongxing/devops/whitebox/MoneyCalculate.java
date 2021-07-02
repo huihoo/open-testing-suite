@@ -1,4 +1,7 @@
 package tech.rongxing.devops.whitebox;
+
+import javax.swing.plaf.synth.SynthTabbedPaneUI;
+
 /**
  * 题目四
  */
@@ -35,5 +38,11 @@ public class MoneyCalculate {
             sum = 10000 + 100000 * 0.075 + 200000 * 0.05 + 200000 * 0.03 + 400000 * 0.015 + (money - 1000000) * 0.01;
         }
         return sum;
+    }
+
+    public static void main(String[] args) {
+        MoneyCalculate mc = new MoneyCalculate();
+        double x = mc.getMoney(100000);
+        System.out.print(x);
     }
 }

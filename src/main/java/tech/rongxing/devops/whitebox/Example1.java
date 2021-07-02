@@ -1,9 +1,5 @@
 package tech.rongxing.devops.whitebox;
-/**
- * 白盒测试案例
- * @author huizhuoli
- *
- */
+
 public class Example1 {
 	/**
 	 * 方法1
@@ -46,12 +42,15 @@ public class Example1 {
 		       x=x+1;
 		 return x;
 	}
-	 
 
 	public static void main(String[] args) {
 		Example1 exp1 = new Example1();
 		int x = exp1.Func1(2,0, 3);
-		System.out.print(x); 
+		System.out.print(x);
+
+		Example1 exp2 = new Example1();
+		boolean y = exp2.Func2("admin");
+		System.out.print(y);
 	}
 
 }

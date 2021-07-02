@@ -1,8 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: tech.rongxing.devops.unittest.demo.AddThreeFunTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.169 s <<< FAILURE! - in tech.rongxing.devops.unittest.demo.AddThreeFunTest
-testAdd  Time elapsed: 0.006 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <140> but was: <20>
-	at tech.rongxing.devops.unittest.demo.AddThreeFunTest.testAdd(AddThreeFunTest.java:44)
-
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.083 s - in tech.rongxing.devops.unittest.demo.AddThreeFunTest

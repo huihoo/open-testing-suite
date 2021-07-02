@@ -1,5 +1,4 @@
 package tech.rongxing.devops.unittest.exam4;
- 
 
 public class Example4 {
     private A1 a1 = new A1();

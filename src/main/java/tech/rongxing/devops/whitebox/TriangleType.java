@@ -28,6 +28,12 @@ public class TriangleType {
 						
 				}else return 0;
 			}else return 0;
-			
+
 		}
+
+	public static void main(String[] args) {
+		TriangleType TT = new TriangleType();
+		double tt = TT.getTriangleType(10,20,20);
+		System.out.print(tt);
+	}
 }
