@@ -13,27 +13,27 @@ public class MoneyCalculate {
      */
     public double getMoney(double money){
         double sum = 0;
-        if(money<=100000)
+        if(money <= 100000)
         {
             sum = 0.1 * money;
         }
-        if(money>100000 && money<=200000)
+        if(money > 100000 && money <= 200000)
         {
             sum = 10000 + (money - 100000) * 0.075;
         }
-        if(money>200000 && money<=400000)
+        if(money > 200000 && money <= 400000)
         {
-            sum = 10000 + 100000 * 0.075 + (money - 200000)*0.05;
+            sum = 10000 + 100000 * 0.075 + (money - 200000) * 0.05;
         }
-        if(money>400000 && money<=600000)
+        if(money > 400000 && money <= 600000)
         {
             sum = 10000 + 100000 * 0.075 + 200000 * 0.05 + (money - 400000) * 0.03;
         }
-        if(money>600000 && money<=1000000)
+        if(money > 600000 && money <= 1000000)
         {
             sum = 10000 + 100000 * 0.075 + 200000 * 0.05 + 200000 * 0.03 + (money - 600000) * 0.015;
         }
-        if(money>1000000)
+        if(money > 1000000)
         {
             sum = 10000 + 100000 * 0.075 + 200000 * 0.05 + 200000 * 0.03 + 400000 * 0.015 + (money - 1000000) * 0.01;
         }
@@ -42,7 +42,7 @@ public class MoneyCalculate {
 
     public static void main(String[] args) {
         MoneyCalculate mc = new MoneyCalculate();
-        double x = mc.getMoney(100000);
+        double x = mc.getMoney(600000);
         System.out.print(x);
     }
 }

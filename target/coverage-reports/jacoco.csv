@@ -1,5 +1,5 @@
 GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
-whitebox,tech.rongxing.devops.whitebox,Example1,32,48,10,8,7,14,9,5,1,4
+whitebox,tech.rongxing.devops.whitebox,Example1,29,51,7,11,7,14,7,7,1,4
 whitebox,tech.rongxing.devops.whitebox,GetWeek,153,0,24,0,25,0,18,0,3,0
 whitebox,tech.rongxing.devops.whitebox,MoneyCalculate,103,0,20,0,19,0,13,0,3,0
 whitebox,tech.rongxing.devops.whitebox,TriangleType,93,0,28,0,17,0,17,0,3,0

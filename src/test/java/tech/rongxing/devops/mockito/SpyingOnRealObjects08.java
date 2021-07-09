@@ -25,6 +25,7 @@ public class SpyingOnRealObjects08 {
 
         // prints "one" - the first element of a list
         System.out.println(spy.get(0));
+        System.out.println(spy.get(1));
 
         // size() method was stubbed - 100 is printed
         int spySize =spy.size();

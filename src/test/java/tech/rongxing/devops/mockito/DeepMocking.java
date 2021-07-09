@@ -23,7 +23,7 @@ public class DeepMocking {
         assertNotNull(iterator);
         assertFalse(iterator.hasNext());
         assertNotNull(iterator.next());
-        assertNotNull(iterator.next());
+        //assertNotNull(iterator.next());
     }
 }
 

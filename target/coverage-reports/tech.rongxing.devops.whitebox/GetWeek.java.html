@@ -2,45 +2,48 @@
 
 <span class="nc" id="L3">public class GetWeek {</span>
 	public  String getWeek(int year,int month,int day) {
-		//十二个月每月天数
-<span class="nc" id="L6">		int a[]={31,28,31,30,31,30,31,31,30,31,30,31};</span>
+		// 平年的2月有28天；闰年的2月有29天。
+		// 通常每4年里有三个平年，一个闰年。
+		// 十二个月每月天数
+<span class="nc" id="L8">		int a[] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};</span>
 		int i;
-<span class="nc" id="L8">		int sum=0;</span>
-<span class="nc bnc" id="L9" title="All 2 branches missed.">		for(i=1;i&lt;year;i++)</span>
+<span class="nc" id="L10">		int sum = 0;</span>
+<span class="nc bnc" id="L11" title="All 2 branches missed.">		for(i=1; i&lt;year; i++)</span>
 		{
-			//判断是否是润年
-<span class="nc bnc" id="L12" title="All 6 branches missed.">			if((i%4==0&amp;&amp;i%100!=0)||(i%400==0))</span>
+			// 用年份除以4，没有余数就是闰年，有余数就是平年。
+			// 判断是否是闰年
+<span class="nc bnc" id="L15" title="All 6 branches missed.">			if((i%4==0 &amp;&amp; i%100!=0)||(i%400==0))</span>
 			{
-<span class="nc" id="L14">				sum++;</span>
+<span class="nc" id="L17">				sum++;</span>
 			}
 		}
-			//计算年份天数
-<span class="nc" id="L18">		    sum=sum+365*(year-1);</span>
-		    //计算是这年的第几天
-<span class="nc bnc" id="L20" title="All 6 branches missed.">			if((year%4==0&amp;&amp;year%400!=0)||(year%100==0))</span>
+			// 计算年份天数
+<span class="nc" id="L21">		    sum = sum + 365 * (year-1);</span>
+		    // 计算是这年的第几天
+<span class="nc bnc" id="L23" title="All 6 branches missed.">			if((year%4 == 0 &amp;&amp; year%400!=0)||(year % 100 == 0))</span>
 			{
-<span class="nc" id="L22">			  a[1]=29;</span>
+<span class="nc" id="L25">			  a[1] = 29;</span>
 			}
-<span class="nc bnc" id="L24" title="All 2 branches missed.">			for(i=0;i&lt;month-1;i++)</span>
+<span class="nc bnc" id="L27" title="All 2 branches missed.">			for(i=0; i&lt;month-1; i++)</span>
 			{
-<span class="nc" id="L26">				sum=sum+a[i];</span>
+<span class="nc" id="L29">				sum = sum + a[i];</span>
 			}
-<span class="nc" id="L28">			sum=sum+day;</span>
-<span class="nc bnc" id="L29" title="All 8 branches missed.">		  switch(sum % 7)</span>
-<span class="nc" id="L30">	      {   case 0 :return &quot;Sunday&quot;;</span>
-<span class="nc" id="L31">	          case 1 :return &quot;Monday&quot;;</span>
-<span class="nc" id="L32">	          case 2 :return &quot;Tuesday&quot;;</span>
-<span class="nc" id="L33">	          case 3 :return &quot;Wednesday&quot;;</span>
-<span class="nc" id="L34">	          case 4 :return &quot;Thursday&quot;;</span>
-<span class="nc" id="L35">	          case 5 :return &quot;Friday&quot;;</span>
-<span class="nc" id="L36">	          case 6 :return &quot;Saturday&quot;; </span>
+<span class="nc" id="L31">			sum = sum + day;</span>
+<span class="nc bnc" id="L32" title="All 8 branches missed.">		  switch(sum % 7)</span>
+<span class="nc" id="L33">	      {   case 0 :return &quot;Sunday&quot;;</span>
+<span class="nc" id="L34">	          case 1 :return &quot;Monday&quot;;</span>
+<span class="nc" id="L35">	          case 2 :return &quot;Tuesday&quot;;</span>
+<span class="nc" id="L36">	          case 3 :return &quot;Wednesday&quot;;</span>
+<span class="nc" id="L37">	          case 4 :return &quot;Thursday&quot;;</span>
+<span class="nc" id="L38">	          case 5 :return &quot;Friday&quot;;</span>
+<span class="nc" id="L39">	          case 6 :return &quot;Saturday&quot;; </span>
 	      }
-<span class="nc" id="L38">		return &quot;错误&quot;;</span>
+<span class="nc" id="L41">		return &quot;错误&quot;;</span>
 	}
 	public static void main(String[] args) {
-<span class="nc" id="L41">		GetWeek exp1 = new GetWeek();</span>
-<span class="nc" id="L42">		String x = exp1.getWeek(2021, 6, 30);</span>
-<span class="nc" id="L43">		System.out.print(x);</span>
-<span class="nc" id="L44">	}</span>
+<span class="nc" id="L44">		GetWeek exp1 = new GetWeek();</span>
+<span class="nc" id="L45">		String x = exp1.getWeek(2021, 6, 30);</span>
+<span class="nc" id="L46">		System.out.print(x);</span>
+<span class="nc" id="L47">	}</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.3.201901230119</span></div></body></html>

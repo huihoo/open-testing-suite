@@ -17,6 +17,7 @@ class CalculatorTests {
     }
 
     @ParameterizedTest(name = "{0} + {1} = {2}")
+    @DisplayName("2 + 2 = 4")
     @CsvSource({
             "0,    1,   1",
             "1,    2,   3",

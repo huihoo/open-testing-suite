@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: tech.rongxing.devops.unittest.demo.AddThreeFunTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.083 s - in tech.rongxing.devops.unittest.demo.AddThreeFunTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.369 s - in tech.rongxing.devops.unittest.demo.AddThreeFunTest
