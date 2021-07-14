@@ -17,6 +17,10 @@ import java.util.concurrent.CountDownLatch;
 
 import org.junit.jupiter.api.Test;
 
+/*
+ * https://junit.org/junit5/docs/current/user-guide/#writing-tests-assertions
+ */
+
 public class MyAssertions {
 }
 

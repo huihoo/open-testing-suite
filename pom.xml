@@ -33,11 +33,25 @@
 	</properties>
 
 	<dependencies>
-	<dependency>
-	<groupId>org.junit.jupiter</groupId>
-	<artifactId>junit-jupiter-engine</artifactId>
-	<version>${junit.jupiter.version}</version>
-</dependency>
+
+		<dependency>
+		<groupId>org.junit.platform</groupId>
+		<artifactId>junit-platform-launcher</artifactId>
+		<version>1.7.2</version>
+		<scope>test</scope>
+	</dependency>
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-engine</artifactId>
+			<version>5.7.2</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.junit.vintage</groupId>
+			<artifactId>junit-vintage-engine</artifactId>
+			<version>5.7.2</version>
+			<scope>test</scope>
+		</dependency>
 
 <dependency>
     <groupId>org.junit.jupiter</groupId>
@@ -121,8 +135,8 @@
 			<!-- maven 编译结束 -->
 			<plugin>
 				<artifactId>maven-surefire-plugin</artifactId>
-				<!-- JUnit 5 requires Surefire version 2.22.0 or higher -->
-				<version>${maven.surefire.plugin.version}</version>
+				<!-- JUnit 5 requires Surefire version 2.22.0 or higher, Two plugin versions (2.22.1 and 3.0.0-M1) -->
+				<version>3.0.0-M1</version>
 				<configuration>
 					<testFailureIgnore>true</testFailureIgnore>
 					<includes>

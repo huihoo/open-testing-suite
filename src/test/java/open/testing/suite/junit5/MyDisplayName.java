@@ -3,6 +3,10 @@ package open.testing.suite.junit5;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+/*
+ * https://junit.org/junit5/docs/current/user-guide/#writing-tests-display-names
+ */
+
 public class MyDisplayName {
 }
 

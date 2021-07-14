@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------
+Test set: open.testing.suite.mockito.FindingRedundantInvocations06
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.003 s <<< FAILURE! - in open.testing.suite.mockito.FindingRedundantInvocations06
+test  Time elapsed: 0.001 s  <<< FAILURE!
+org.mockito.exceptions.verification.NoInteractionsWanted: 
+
+No interactions wanted here:
+-> at open.testing.suite.mockito.FindingRedundantInvocations06.test(FindingRedundantInvocations06.java:22)
+But found this interaction on mock 'Mock for List, hashCode: 1896062177':
+-> at open.testing.suite.mockito.FindingRedundantInvocations06.test(FindingRedundantInvocations06.java:15)
+***
+For your reference, here is the list of all invocations ([?] - means unverified).
+1. -> at open.testing.suite.mockito.FindingRedundantInvocations06.test(FindingRedundantInvocations06.java:13)
+2. -> at open.testing.suite.mockito.FindingRedundantInvocations06.test(FindingRedundantInvocations06.java:14)
+3. [?]-> at open.testing.suite.mockito.FindingRedundantInvocations06.test(FindingRedundantInvocations06.java:15)
+
+	at open.testing.suite.mockito.FindingRedundantInvocations06.test(FindingRedundantInvocations06.java:22)
+
