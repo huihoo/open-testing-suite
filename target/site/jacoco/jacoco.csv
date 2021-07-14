@@ -2,6 +2,7 @@ GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_
 whitebox,open.testing.suite.unittest.demo,AddFun,0,14,0,0,0,3,0,3,0,3
 whitebox,open.testing.suite.unittest.demo,AddTwoFun,0,7,0,0,0,2,0,2,0,2
 whitebox,open.testing.suite.unittest.demo,AddThreeFun,0,16,0,0,0,3,0,2,0,2
+whitebox,open.testing.suite.unittest.demo,Person,28,15,0,0,2,6,2,3,2,3
 whitebox,open.testing.suite.unittest.demo,Calculator,0,7,0,0,0,2,0,2,0,2
 whitebox,open.testing.suite.unittest.exam1,Example1,40,0,2,0,7,0,3,0,2,0
 whitebox,open.testing.suite.unittest.exam1,Cutstring,47,0,4,0,11,0,5,0,3,0

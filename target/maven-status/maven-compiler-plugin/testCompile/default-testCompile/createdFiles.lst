@@ -1,7 +1,9 @@
 open\testing\suite\mockito\FindingRedundantInvocations06.class
 open\testing\suite\junit5\MyAnnotations$FastTest.class
+open\testing\suite\junit5\HamcrestAssertionsDemo.class
 open\testing\suite\junit5\MyDisplayNameGeneration.class
 open\testing\suite\junit5\DisplayNameDemo.class
+open\testing\suite\junit5\MyAssertions.class
 open\testing\suite\mockito\VerifyExactNumberOfInvocations03.class
 open\testing\suite\mockito\SecondStubbing02.class
 open\testing\suite\whitebox\GetWeekTest.class
@@ -10,12 +12,14 @@ open\testing\suite\junit5\MyFirstJUnitJupiterTests.class
 open\testing\suite\junit5\DisplayNameGeneratorDemo$A_year_is_not_supported.class
 open\testing\suite\unittest\demo\AddThreeFunTest01.class
 open\testing\suite\junit5\MyScenarioTest.class
+open\testing\suite\junit5\AssertionsDemo.class
 open\testing\suite\junit5\MyParameterizedTest.class
 open\testing\suite\junit5\StandardTests.class
 open\testing\suite\mockito\SpyingOnRealObjects08.class
 open\testing\suite\junit5\MyAnnotations.class
 open\testing\suite\mockito\DeepMocking.class
 open\testing\suite\unittest\demo\CalculatorTests.class
+open\testing\suite\junit5\ThirdPartyAssertion.class
 open\testing\suite\mockito\FirstMock01.class
 open\testing\suite\whitebox\Example1Test.class
 open\testing\suite\junit5\DisplayNameGeneratorDemo.class

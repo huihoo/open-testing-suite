@@ -9,6 +9,7 @@ open\testing\suite\unittest\exam1\Addition.class
 open\testing\suite\unittest\exam2\ReciprocalSum.class
 open\testing\suite\unittest\exam3\Circle.class
 open\testing\suite\unittest\exam4\A1.class
+open\testing\suite\unittest\demo\Person.class
 open\testing\suite\unittest\exam2\OfsquaresSum.class
 open\testing\suite\whitebox\Example1.class
 open\testing\suite\whitebox\GetWeek.class

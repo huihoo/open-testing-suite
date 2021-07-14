@@ -1,14 +1,14 @@
 -------------------------------------------------------------------------------
 Test set: open.testing.suite.junit5.AssertionsDemo
 -------------------------------------------------------------------------------
-Tests run: 9, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.24 s <<< FAILURE! - in open.testing.suite.junit5.AssertionsDemo
-timeoutExceededWithPreemptiveTermination  Time elapsed: 0.061 s  <<< FAILURE!
+Tests run: 9, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.304 s <<< FAILURE! - in open.testing.suite.junit5.AssertionsDemo
+timeoutExceededWithPreemptiveTermination  Time elapsed: 0.033 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: execution timed out after 10 ms
 	at open.testing.suite.junit5.AssertionsDemo.timeoutExceededWithPreemptiveTermination(MyAssertions.java:123)
 Caused by: org.junit.jupiter.api.AssertTimeout$ExecutionTimeoutException: Execution timed out in thread junit-timeout-thread-1
-	at open.testing.suite.junit5.AssertionsDemo.lambda$timeoutExceededWithPreemptiveTermination$11(MyAssertions.java:125)
+	at app//open.testing.suite.junit5.AssertionsDemo.lambda$timeoutExceededWithPreemptiveTermination$11(MyAssertions.java:125)
 
-timeoutExceeded  Time elapsed: 0.105 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: execution exceeded timeout of 10 ms by 92 ms
+timeoutExceeded  Time elapsed: 0.116 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: execution exceeded timeout of 10 ms by 104 ms
 	at open.testing.suite.junit5.AssertionsDemo.timeoutExceeded(MyAssertions.java:113)
 
