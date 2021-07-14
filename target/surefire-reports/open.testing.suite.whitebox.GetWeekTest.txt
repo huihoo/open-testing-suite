@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: open.testing.suite.whitebox.GetWeekTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.002 s <<< FAILURE! - in open.testing.suite.whitebox.GetWeekTest
+testGetWeek  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Not yet implemented
+	at open.testing.suite.whitebox.GetWeekTest.testGetWeek(GetWeekTest.java:21)
+

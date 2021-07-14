@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>tech.rongxing.devops</groupId>
+	<groupId>open.testing.suite</groupId>
 	<artifactId>software.whitebox</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
@@ -15,10 +15,10 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 
-		<junit.jupiter.version>5.4.2</junit.jupiter.version>
+		<junit.jupiter.version>5.7.2</junit.jupiter.version>
 
 		<!-- junit版本号 -->
-		<junit.version>5.2.0</junit.version>
+		<junit.version>5.7.2</junit.version>
 		<!-- checkstyle版本号 -->
 		<maven.checkstyle.version>3.0.0</maven.checkstyle.version>
 		<maven.jxr.version>3.0.0</maven.jxr.version>
