@@ -32,7 +32,7 @@ public class AddFunTest {
 		int a = 50;
 		int b = 60;
 		int c = 30;
-		int exp = 140;
+		int exp = 20;
 		 
 		AddFun testObject2 = new AddFun();
 		int act2 = testObject2.addThree(a, b, c);

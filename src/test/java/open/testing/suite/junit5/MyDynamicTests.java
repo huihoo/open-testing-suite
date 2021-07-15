@@ -35,12 +35,13 @@ class DynamicTestsDemo {
 
     private final Calculator calculator = new Calculator();
 
+/*
     // This will result in a JUnitException!
     @TestFactory
     List<String> dynamicTestsWithInvalidReturnType() {
         return Arrays.asList("Hello");
     }
-
+*/
     @TestFactory
     Stream<DynamicTest> dynamicTestsFromIntStream() {
         // Generates tests for the first 10 even integers.

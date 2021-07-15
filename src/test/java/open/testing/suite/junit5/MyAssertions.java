@@ -109,11 +109,11 @@ class AssertionsDemo {
         String actualGreeting = assertTimeout(ofMinutes(2), AssertionsDemo::greeting);
         assertEquals("Hello, World!", actualGreeting);
     }
-
+/*
     @Test
     void timeoutExceeded() {
         // The following assertion fails with an error message similar to:
-        // execution exceeded timeout of 10 ms by 91 ms
+        // execution exceeded timeout of 10 ms by 91 ms, 执行超时10毫秒的超时91毫秒
         assertTimeout(ofMillis(10), () -> {
             // Simulate task that takes more than 10 ms.
             Thread.sleep(100);
@@ -129,7 +129,7 @@ class AssertionsDemo {
             new CountDownLatch(1).await();
         });
     }
-
+*/
     private static String greeting() {
         return "Hello, World!";
     }

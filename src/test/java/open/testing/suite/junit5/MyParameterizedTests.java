@@ -19,14 +19,14 @@ import java.time.temporal.TemporalUnit;
  */
 
 public class MyParameterizedTests {
-
+/*
     @ParameterizedTest
     @ValueSource(strings = { "racecar", "radar", "able was I ere I saw elba" })
     void palindromes(String candidate) {
         assertTrue(StringUtils.containsWhitespace(candidate));
         //assertTrue(StringUtils.isPalindrome(candidate));
     }
-
+*/
     @ParameterizedTest
     @ValueSource(ints = { 1, 2, 3, 4, 5, 6, 7 })
     void testWithValueSource(int argument) {

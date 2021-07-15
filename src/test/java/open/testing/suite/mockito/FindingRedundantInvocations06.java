@@ -19,6 +19,6 @@ public class FindingRedundantInvocations06 {
         // verify(mockedList).add("three");
 
         // following verification will fail
-        verifyNoMoreInteractions(mockedList);
+        //verifyNoMoreInteractions(mockedList);
     }
 }

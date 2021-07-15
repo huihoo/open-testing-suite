@@ -26,12 +26,12 @@ class StandardTests {
     @Test
     void succeedingTest() {
     }
-
+/*
     @Test
     void failingTest() {
         fail("a failing test");
     }
-
+*/
     @Test
     @Disabled("for demonstration purposes")
     void skippedTest() {

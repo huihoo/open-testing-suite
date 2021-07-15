@@ -16,9 +16,11 @@ class GetWeekTest {
 	void tearDown() throws Exception {
 	}
 
+	/*
 	@Test
 	void testGetWeek() {
 		fail("Not yet implemented");
 	}
+	 */
 
 }

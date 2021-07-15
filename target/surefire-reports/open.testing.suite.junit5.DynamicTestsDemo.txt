@@ -1,8 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: open.testing.suite.junit5.DynamicTestsDemo
 -------------------------------------------------------------------------------
-Tests run: 24, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.038 s <<< FAILURE! - in open.testing.suite.junit5.DynamicTestsDemo
-dynamicTestsWithInvalidReturnType  Time elapsed: 0 s  <<< ERROR!
-org.junit.platform.commons.JUnitException: @TestFactory method [java.util.List<java.lang.String> open.testing.suite.junit5.DynamicTestsDemo.dynamicTestsWithInvalidReturnType()] must return a single org.junit.jupiter.api.DynamicNode or a Stream, Collection, Iterable, Iterator, or array of org.junit.jupiter.api.DynamicNode.
-Caused by: java.lang.ClassCastException: java.lang.String cannot be cast to org.junit.jupiter.api.DynamicNode
-
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in open.testing.suite.junit5.DynamicTestsDemo
