@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: open.testing.suite.junit5.StandardTests
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 0.028 s <<< FAILURE! - in open.testing.suite.junit5.StandardTests
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 0.009 s <<< FAILURE! - in open.testing.suite.junit5.StandardTests
 failingTest  Time elapsed: 0 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: a failing test
 	at open.testing.suite.junit5.StandardTests.failingTest(MyStandardTests.java:32)

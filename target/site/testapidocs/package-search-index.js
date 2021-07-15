@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"open.testing.suite.junit5","h":"","u":""},{"l":"open.testing.suite.mockito","h":"","u":""},{"l":"open.testing.suite.unittest.demo","h":"","u":""},{"l":"open.testing.suite.whitebox","h":"","u":""},{"l":"所有程序包","h":"","u":"allpackages-index.html"}]

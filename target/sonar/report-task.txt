@@ -1,0 +1,6 @@
+projectKey=open-testing-suite
+serverUrl=http://localhost:9001
+serverVersion=8.9.1.44547
+dashboardUrl=http://localhost:9001/dashboard?id=open-testing-suite
+ceTaskId=AXqn1vgjpgxFLwjFtz0v
+ceTaskUrl=http://localhost:9001/api/ce/task?id=AXqn1vgjpgxFLwjFtz0v
